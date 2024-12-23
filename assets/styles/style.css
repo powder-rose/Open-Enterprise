@@ -16,6 +16,10 @@
     font-weight: normal;
   }
 
+  @font-face {
+    font-family: "NovelMono";
+    src: url("../fonts/NovelMono/novel-mono-pro-regular.otf");
+  }
 
   :root {
     font-family: "Proxima-Nova", sans-serif;
@@ -115,6 +119,7 @@
     display: grid;
     grid-template: 1fr fit-content 1fr / 1fr 1fr 1fr;
     justify-items: center;
+    margin-bottom: 10em;
 }
 
 .reimagining-header {
@@ -148,3 +153,72 @@
     font-size: 1.1rem;
 }
 
+.kickstart {
+    display: grid;
+    grid-template: 30% 1fr / 50% 50%;
+    justify-items: center;
+}
+
+.kickstart_header {
+    justify-self: end;
+    font-family: "Bely-font", sans-serif;
+    color: rgb(48, 48, 48);
+    font-size: 3rem;
+    width: 70%;
+}
+
+.kickstart_desc {
+    justify-self: end;
+    font-size: 1.2rem;
+    grid-area: 2/1/2/2;
+    width: 70%;
+}
+
+.members-list {
+    display: grid;
+    align-items: center;
+
+    grid-template: repeat(4, 25%) / 1fr;
+    align-content: space-evenly;
+    background-color: rgb(248, 252, 252);
+    width: 484px;
+    height: 410px;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 15px 15px 1px rgba(113, 168, 148, 1);
+    font-family: "NovelMono", serif;
+}
+
+.members-list_header {
+    font-size: 2rem;
+    margin-left: 1.9em;
+
+}
+
+.members-card {
+    display: grid;
+    grid-template: 40% 30% / 30% 40%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.members-card_image {
+    border-radius: 50%;
+    width: 5em;
+    grid-row: span 2;
+    justify-self: end;
+    margin-right: 1em;
+}
+
+.members-card_shares {
+    grid-area: 2/2/2/3;
+    justify-self: start;
+    color: rgba(102, 100, 94, 1);
+    text-transform: uppercase;
+}
+
+.members-card_name {
+    justify-self: start;
+    align-self: start;
+}
