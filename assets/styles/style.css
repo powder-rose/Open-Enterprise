@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Proxima-Nova";
+    src: url("../fonts/Proximanova/proximanova_regular.ttf");
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: "Proxima-Nova";
+    src: url("../fonts/Proximanova/proximanova_bold.otf");
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "Bely-font";
+    src: url("../fonts/Bely/Bely\ Display\ W00\ Regular.ttf");
+    font-weight: normal;
+  }
+
+
+  :root {
+    font-family: "Proxima-Nova", sans-serif;
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+.header {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+    padding: 2em;
+}
+
+.nav {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    justify-items: center;
+
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(48, 48, 49, 1);
+}
+
+.nav-link:hover {
+    color: rgba(113, 168, 148, 1);
+}
+
+.nav-link:visited {
+    color: rgba(48, 48, 49, 1);
+}
+
+.nav-link-green {
+    color: rgba(113, 168, 148, 1);
+}
+
+.nav-link-green:hover {
+    color: rgba(48, 48, 49, 1);
+}
+
+.nav-link-green:visited {
+    color: rgba(48, 48, 49, 1);
+}
+
+.main {
+    display: grid;
+    grid-template:  1fr / 55% 1fr ;
+    justify-content: center;
+    margin-bottom: 500px;
+}
+
+.main-wrapper {
+    padding: 8em;
+}
+
+.main-header {
+    width: 100%;
+    font-family: "Bely-font", serif;
+    color: rgba(48, 48, 49, 1);
+    font-size: 4.3rem;
+    font-weight: normal;
+}
+
+.main-desc {
+    color: rgba(48, 48, 49, 1);
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.main-btn {
+    background-color: rgba(113, 168, 148, 1);
+    border: none;
+    border-radius: 10px;
+    width: 13em;
+    height: 4em;
+    font-weight: bold;
+    color: white;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    background-color: rgb(48, 48, 48);
+    color: rgba(113, 168, 148, 1);
+}
+
+.main-illustration {
+    position: absolute;
+    width: 60%;
+    right: 0;
+}
+
+.reimagining {
+    display: grid;
+    grid-template: 1fr fit-content 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.reimagining-header {
+    grid-area: 1/1/2/4;
+    font-family: "Bely-font", serif;
+    font-size: 4.3rem;
+    font-weight: normal;
+    color: rgb(48, 48, 48);
+}
+
+.reimagining-desc {
+    text-align: center;
+    font-size: 1.2rem;
+    grid-column: span 3;
+    width: 53%;
+    margin-bottom: 3em;
+}
+
+.reimagining-card {
+    display: grid;
+    grid-template: 30% 20% 20% / 1fr ;
+    justify-items: center;
+    align-content: center;
+    width: 400px;
+    height: 300px;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    font-size: 1.1rem;
+}
+
